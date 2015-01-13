@@ -1,0 +1,6 @@
+---
+
+# Change this if the LDAP server ever changes.
+
+ldapserver: "insert here"
+ldapinfo: "insert here"

@@ -1,0 +1,29 @@
+---
+
+##########
+
+# Dictionary to reference is called "user_info" and uid is stored as "uid" (sans quotes).
+
+# Example of dictionary (anything starting with * is an LDAP attribute):
+# {*uid: {*ou: {new: ["Blah"], old: ["Foo"]}}
+#        {*cn: {new: ["Bloop"], old: ["Harris"]}}}
+
+# Keep in mind that ALL keys are strings and ALL values are lists (even if there is only one string within the list).
+# EXCEPT the uid. Accessing user_info[uid] will return a string containing the user id.
+
+# Do not put "if" at beginning or semi-colon at end of statement:
+# Example queries (queries must be in Python syntax):
+
+# Before trying to access a key, ensure that it exists using "key in user_info[uid]".
+# You are guaranteed to have both keys "old" and "new", but it is possible that they map to empty values.
+# The uid is stored as a STRING (not list) at user_info[uid].
+
+# REGARDING COMMANDS
+# The program will run scripts in a shell without checking input. 
+
+##########
+
+
+conditions: [
+
+]
